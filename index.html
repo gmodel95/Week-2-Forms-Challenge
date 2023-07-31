@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>She Codes Plus</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <img src="images/logo.png" alt="She Codes Plus Logo" class="logo" />
+      <h1>HTML Forms</h1>
+
+      <h3>HTML Challenge 1</h3>
+      <p>
+        Create a login form with username field, a password field and a login
+        button
+      </p>
+      <form action="/submit">
+        <label for="username"> Enter your username </label>
+        <input type="text" name="username" id="username" required />
+        <label for="password"> Enter your password </label>
+        <input type="text" name="password" id="password" required />
+        <input type="submit" value="Login" />
+      </form>
+      <h3>HTML Challenge 2</h3>
+      <p>Import Bootstrap and apply the form component styling</p>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputUsername1">Username</label>
+          <input
+            type="username"
+            class="form-control"
+            id="exampleInputUsername1"
+            aria-describedby="usernameHelp"
+            placeholder="Enter username"
+          />
+          <small id="usernameHelp" class="form-text text-muted"
+            >Never share this with anyone else.</small
+          >
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            placeholder="Password"
+          />
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+      <script src="src/index.js"></script>
+    </div>
+  </body>
+</html>
